@@ -1,7 +1,7 @@
 new TradingView.widget(
     {
         "autosize": true,
-        "symbol": "BINANCE:BTCUSDT",
+        "symbol": "NASDAQ:AAPL",
         "interval": "240",
         "timezzone": "Etc/Utc",
         "theme": "dark",
@@ -12,19 +12,15 @@ new TradingView.widget(
         "withdateranges": false,
         "hide_side_toolbar": true,
         "allow_symbol_change": true,
-        "watchlist": [
-            "BINANCE:BTCUSDT",
-            "BINANCE:ETHUSDT"
-        ],
         "details": true,
         "hotlist": true,
         "calendar": true,
         "studies": [
-            "STD;SMA"
+            "STD;SMA",
         ],
         "container_id": "chart",
         "show_popup_button": true,
         "popup_width": "1000",
         "popup_height": "650"
     }
-);
+)
