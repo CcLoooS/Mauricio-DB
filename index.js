@@ -7,8 +7,9 @@ new TradingView.widget(
         "theme": "dark",
         "style": "1",
         "locale": "en",
+        "background": "logo.png",
         "toolbar_bg": "#f1f3f6",
-        "enable_publishing": true,
+        "enable_publishing": false,
         "withdateranges": false,
         "hide_side_toolbar": true,
         "allow_symbol_change": true,
@@ -24,3 +25,8 @@ new TradingView.widget(
         "popup_height": "650"
     }
 )
+
+document.getElementById('scrollButton').addEventListener('click', function() {
+    document.getElementById('chart').scrollIntoView({ behavior: 'smooth' });
+});
+
