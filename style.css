@@ -43,13 +43,8 @@ body {
 .header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    padding: 1rem;
+    flex-direction: row;
     background: linear-gradient(#131722, #996D30, #F0D099, #131722);
     color: #1d2438;
   }
@@ -58,39 +53,32 @@ body {
     font-weight: 100;
   }
 
-.logo-png {
-    width: 15%;
-    height: 100%
-    margin-bottom: 20px;
+.header > .logo-png {
+    width: 8%;
+    height: 100%;
+    margin-top: 20rem;
+    margin-left: 40rem;
+    padding-top: 10rem;
 }
 
-.intro {
-    max-width: 600px;
+.video-wrapper {
+  max-width: 100%; /* Ensures the container doesn't exceed its parent's width */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 2); /* Adds a dark shadow effect */
+  border-radius: 8px; /* Optional: Adds rounded corners to the container */
+  overflow: hidden; /* Ensures the shadow is contained within the wrapper */
 }
 
-.intro h1 {
-    margin: 10px 0;
+.video-wrapper video {
+  display: block; /* Ensures video is block-level for margin and padding purposes */
+  width: 100%; /* Makes the video fill its container */
+  height: 100%;
 }
 
-.intro p {
-    margin: 10px 0 20px 0;
+/* Optional: Adjust padding or margins for better spacing */
+.video-wrapper {
+  padding: 6px; /* Add padding inside the container if needed */
+  margin: 6rem .5rem; /* Add margins around the container */
+  margin-left: 20rem;
 }
 
-#scrollButton {
-    padding: 10px 20px;
-    background-color: #a07539;
-    color-scheme: ;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 16px;
-}
 
-#scrollButton:hover {
-    background-color: #a07539b4;
-}
-
-#chart {
-    text-align: center;
-}
